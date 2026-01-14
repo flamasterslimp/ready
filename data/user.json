@@ -1,0 +1,18 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://lab.becomeqa.com",
+      "localStorage": [
+        {
+          "name": "isLoggedIn",
+          "value": "true"
+        },
+        {
+          "name": "username",
+          "value": "testuser@example.com"
+        }
+      ]
+    }
+  ]
+}
