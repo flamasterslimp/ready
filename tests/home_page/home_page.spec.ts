@@ -1,7 +1,7 @@
 import { test, expect } from '../../fixtures/pages.fixture';
 
 test.describe('Essential Level - Must Know Blindfolded', () => {
-    test('PW01 - Setup Playwright and first test', async ({ page, homeActions }) => {
+    test('PW01 - Setup Playwright and first test SMOKE @smoke', async ({ page, homeActions }) => {
         // Navigate to the website using home actions
         await homeActions.navigateToHome();
 

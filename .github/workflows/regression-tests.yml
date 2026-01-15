@@ -1,0 +1,67 @@
+name: Regression Tests (Nightly)
+
+on:
+  # Schedule: Every day at 2:00 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+jobs:
+  regression-tests:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps ${{ matrix.browser }}
+    
+    - name: Run Regression Tests (All Tests)
+      run: npx playwright test --project=${{ matrix.browser }}
+      env:
+        BASE_URL: https://lab.becomeqa.com
+    
+    - name: Upload test results - ${{ matrix.browser }}
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: regression-report-${{ matrix.browser }}
+        path: playwright-report/
+        retention-days: 30
+    
+    - name: Upload test artifacts - ${{ matrix.browser }}
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: regression-artifacts-${{ matrix.browser }}
+        path: test-results/
+        retention-days: 30
+  
+  # Send notification after all browsers complete
+  notify:
+    needs: regression-tests
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+    - name: Check test results
+      run: |
+        echo "Regression tests completed"
+        echo "Check artifacts for detailed reports"
