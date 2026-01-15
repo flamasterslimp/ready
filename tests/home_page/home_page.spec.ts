@@ -21,6 +21,26 @@ test.describe('Essential Level - Must Know Blindfolded', () => {
         // ========================================
     });
 
+    test('PW01111 - Fail this SMOKE @smoke', async ({ page, homeActions }) => {
+        // Navigate to the website using home actions
+        await homeActions.navigateToHome();
+
+        // Log the URL in terminal
+        console.log('We are visiting website: ' + page.url());
+
+        // Assert we're on the home page
+        await homeActions.expectHomePageURL('/');
+
+        // ========================================
+        // HOMEWORK
+        // ========================================
+        // Research these topics:
+        // - What does npm install actually do?
+        // - What is Mocha and how does it relate to testing?
+        // - Why might Playwright be better than Cypress?
+        // ========================================
+    });
+
     test('PW02 - same 2', async ({ page, homeActions }) => {
         // Navigate to the website using home actions
         await homeActions.navigateToHome();
