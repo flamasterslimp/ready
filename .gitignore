@@ -1,5 +1,4 @@
 node_modules
 test-results
 .DS_Store
-package-lock.json
 playwright-report
