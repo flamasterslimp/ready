@@ -29,7 +29,7 @@ test.describe('Essential Level - Must Know Blindfolded', () => {
         console.log('We are visiting website: ' + page.url());
 
         // Assert we're on the home page
-        await homeActions.expectHomePageURL('/');
+        await homeActions.expectHomePageURL('/wdwdw');
 
         // ========================================
         // HOMEWORK

@@ -31,6 +31,25 @@ jobs:
       env:
         BASE_URL: https://lab.becomeqa.com
     
+    - name: Generate Allure Report
+      if: always()
+      run: npx allure generate allure-results --clean -o allure-report
+    
+    - name: Deploy Allure Report to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./allure-report
+        destination_dir: smoke-reports/${{ github.run_number }}
+        keep_files: true
+    
+    - name: Add report link to summary
+      if: always()
+      run: |
+        echo "### 📊 Allure Report" >> $GITHUB_STEP_SUMMARY
+        echo "🔗 [View Report](https://flamasterslimp.github.io/ready/smoke-reports/${{ github.run_number }}/)" >> $GITHUB_STEP_SUMMARY
+    
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v4

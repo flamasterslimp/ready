@@ -4,6 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
     "install:browsers": "playwright install --with-deps"
   },
   "keywords": [],
@@ -12,7 +18,9 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.54.1",
-    "@types/node": "^25.0.3"
+    "@types/node": "^25.0.3",
+    "allure-playwright": "^3.0.3",
+    "allure-commandline": "^2.32.1"
   },
   "dependencies": {
     "dotenv": "^17.2.3"
