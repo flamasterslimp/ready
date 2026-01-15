@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1616","PW01 - Setup Playwright and first test SMOKE @smoke","chromium","2026-01-15","passed","2026-01-15","Essential Level - Must Know Blindfolded","","",""
+"","6819","PW01111 - Fail this SMOKE @smoke","chromium","2026-01-15","failed","2026-01-15","Essential Level - Must Know Blindfolded","","",""
