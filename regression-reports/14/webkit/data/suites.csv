@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1790","PW03 - same 3","webkit","2026-01-29","passed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
+"","12846","PW01 - Setup Playwright and first test SMOKE @smoke","webkit","2026-01-29","passed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
+"","1703","PW02 - same 2","webkit","2026-01-29","passed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
+"","6897","PW01111 - Fail this SMOKE @smoke","webkit","2026-01-29","failed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
+"","1858","PW03 - same 3","webkit","2026-01-29","passed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
+"","1992","PW01 - Setup Playwright and first test","webkit","2026-01-29","passed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
+"","1906","PW02 - same 2","webkit","2026-01-29","passed","2026-01-29","Essential Level - Must Know Blindfolded","","",""
