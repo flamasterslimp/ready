@@ -1,0 +1,48 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - navigation [ref=e6]:
+      - heading "QA Test Site" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10]:
+          - /url: /
+        - link "Track your Travel" [ref=e11]:
+          - /url: /items
+        - link "My Account" [ref=e12]:
+          - /url: /my-account
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e18]:
+        - heading "Welcome to QA Test Automation Laboratory" [level=2] [ref=e19]
+        - paragraph [ref=e20]: This comprehensive website is designed for practicing advanced UI automation testing techniques
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Interactive Modal Windows" [level=3] [ref=e26]
+          - paragraph [ref=e28]: Master testing complex modal dialogs with various form elements
+        - generic [ref=e29]:
+          - heading "Dynamic Data Tables" [level=3] [ref=e31]
+          - paragraph [ref=e33]: Practice advanced table interactions and sorting
+        - generic [ref=e34]:
+          - heading "Advanced Form Controls" [level=3] [ref=e36]
+          - paragraph [ref=e38]: Test sophisticated forms with dropdowns and file uploads
+      - generic [ref=e41]:
+        - heading "Professional Resources" [level=3] [ref=e42]
+        - paragraph [ref=e43]: Essential tools and communities for QA professionals and developers
+        - generic [ref=e44]:
+          - link "🔍 Google Search Universal search engine" [ref=e45] [cursor=pointer]:
+            - /url: https://www.google.com
+            - generic [ref=e46]: 🔍
+            - generic [ref=e47]:
+              - heading "Google Search" [level=4] [ref=e48]
+              - text: Universal search engine
+          - link "💬 Stack Overflow Developer community & Q&A" [ref=e49] [cursor=pointer]:
+            - /url: https://stackoverflow.com
+            - generic [ref=e50]: 💬
+            - generic [ref=e51]:
+              - heading "Stack Overflow" [level=4] [ref=e52]
+              - text: Developer community & Q&A
+  - contentinfo [ref=e53]:
+    - paragraph [ref=e57]: © 2025 QA Test Automation Laboratory. Engineered for comprehensive testing practice.
+```
