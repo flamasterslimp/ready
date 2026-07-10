@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1358","PW02 - same 2","chromium","2026-07-10","passed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
+"","6515","PW01111 - Fail this SMOKE @smoke","chromium","2026-07-10","failed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
+"","1393","PW01 - Setup Playwright and first test SMOKE @smoke","chromium","2026-07-10","passed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
+"","1320","PW02 - same 2","chromium","2026-07-10","passed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
+"","1253","PW03 - same 3","chromium","2026-07-10","passed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
+"","1308","PW01 - Setup Playwright and first test","chromium","2026-07-10","passed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
+"","1304","PW03 - same 3","chromium","2026-07-10","passed","2026-07-10","Essential Level - Must Know Blindfolded","","",""
