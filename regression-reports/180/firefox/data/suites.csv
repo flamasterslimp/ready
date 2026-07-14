@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1489","PW03 - same 3","firefox","2026-07-14","passed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
+"","2535","PW01 - Setup Playwright and first test SMOKE @smoke","firefox","2026-07-14","passed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
+"","2267","PW02 - same 2","firefox","2026-07-14","passed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
+"","1443","PW01 - Setup Playwright and first test","firefox","2026-07-14","passed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
+"","7227","PW01111 - Fail this SMOKE @smoke","firefox","2026-07-14","failed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
+"","1475","PW02 - same 2","firefox","2026-07-14","passed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
+"","1578","PW03 - same 3","firefox","2026-07-14","passed","2026-07-14","Essential Level - Must Know Blindfolded","","",""
