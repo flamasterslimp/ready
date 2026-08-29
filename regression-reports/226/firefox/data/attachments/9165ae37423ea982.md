@@ -1,0 +1,73 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - navigation [ref=e6]:
+      - heading "QA Test Site" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Track your Travel" [ref=e11] [cursor=pointer]:
+          - /url: /items
+        - link "My Account" [ref=e12] [cursor=pointer]:
+          - /url: /my-account
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e18]:
+        - heading "Welcome to QA Test Automation Laboratory" [level=2] [ref=e19]
+        - paragraph [ref=e20]: This comprehensive website is designed for practicing advanced UI automation testing techniques
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Interactive Modal Windows" [level=3] [ref=e26]
+          - paragraph [ref=e28]: Master testing complex modal dialogs with various form elements
+        - generic [ref=e29]:
+          - heading "Dynamic Data Tables" [level=3] [ref=e31]
+          - paragraph [ref=e33]: Practice advanced table interactions and sorting
+        - generic [ref=e34]:
+          - heading "Advanced Form Controls" [level=3] [ref=e36]
+          - paragraph [ref=e38]: Test sophisticated forms with dropdowns and file uploads
+      - generic [ref=e41]:
+        - heading "Professional Resources" [level=3] [ref=e42]
+        - paragraph [ref=e43]: Essential tools and communities for QA professionals and developers
+        - generic [ref=e44]:
+          - link "🔍 Google Search Universal search engine" [ref=e45] [cursor=pointer]:
+            - /url: https://www.google.com
+            - generic [ref=e46]: 🔍
+            - generic [ref=e47]:
+              - heading "Google Search" [level=4] [ref=e48]
+              - text: Universal search engine
+          - link "💬 Stack Overflow Developer community & Q&A" [ref=e49] [cursor=pointer]:
+            - /url: https://stackoverflow.com
+            - generic [ref=e50]: 💬
+            - generic [ref=e51]:
+              - heading "Stack Overflow" [level=4] [ref=e52]
+              - text: Developer community & Q&A
+    - generic [ref=e54]:
+      - heading "Practice Playground" [level=3] [ref=e55]
+      - paragraph [ref=e56]: Extra widgets to practise dialogs, Shadow DOM, and hover tooltips.
+      - generic [ref=e57]:
+        - heading "Browser Dialogs" [level=4] [ref=e58]
+        - generic [ref=e59]:
+          - button "Show Alert" [ref=e60] [cursor=pointer]
+          - button "Show Confirm" [ref=e61] [cursor=pointer]
+          - button "Show Prompt" [ref=e62] [cursor=pointer]
+        - generic [ref=e63]:
+          - generic [ref=e64]: "Confirm result: -"
+          - generic [ref=e65]: "Prompt result: -"
+      - generic [ref=e66]:
+        - heading "Shadow DOM Widget" [level=4] [ref=e67]
+        - paragraph [ref=e68]: The block below has an open Shadow Root. Playwright pierces it automatically — selectors look like regular ones.
+        - generic [ref=e70]:
+          - generic [ref=e71]: Inside Shadow DOM 🪄
+          - textbox "Type inside the shadow root" [ref=e72]
+          - button "Submit" [ref=e73] [cursor=pointer]
+        - generic [ref=e74]: "Last submitted from shadow: -"
+      - generic [ref=e75]:
+        - heading "Hover Tooltip" [level=4] [ref=e76]
+        - generic [ref=e77]:
+          - button "Hover me" [ref=e78] [cursor=pointer]
+          - generic [ref=e79]: Tooltip revealed on hover
+  - contentinfo [ref=e80]:
+    - paragraph [ref=e84]: © 2025 QA Test Automation Laboratory. Engineered for comprehensive testing practice.
+```
